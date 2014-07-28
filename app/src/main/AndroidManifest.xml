@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.launcher.informsmanage.main" >
+
+    //获取mac地址的权限
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //获取网络数据权限
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <meta-data android:name="AA_DB_NAME" android:value="Inform.db"/>
+    <meta-data android:name="AA_DB_VERSION" android:value="5"/>
+    <application
+        android:allowBackup="true"
+        android:name="com.launcher.informsmanage.Application.MainApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:theme="@style/MyTheme"
+            android:label="@string/home"
+            android:icon="@drawable/ic_launcher"
+            android:name="com.launcher.informsmanage.Activity.Inform_HomeActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@style/MyTheme"
+            android:name="com.launcher.informsmanage.Activity.Inform_DetailsActivity"
+            android:label="@string/home"
+            android:icon="@drawable/ic_launcher"
+            />
+    </application>
+
+</manifest>
