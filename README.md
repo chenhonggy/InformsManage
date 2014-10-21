@@ -1,2 +1,3 @@
 InformsManage
+make
 =============
